@@ -5,6 +5,7 @@ import { MdMenuOpen } from "react-icons/md";
 function App() {
   const [sidebar, setSidebar] = useState(true);
   return (
+    // sidebar
     <div className="bg-stone-300">
       <div
         className={`${
@@ -33,8 +34,10 @@ function App() {
           </li>
         </div>
       </div>
-
+      {/* component in which we are working */}
       <Example sidebar={sidebar} />
+
+      {/* gola button */}
       <div className="text-white bg-stone-800 fixed top-10 right-20 w-16 h-16 cursor-pointer hover:shadow-lg rounded-full flex items-center justify-center">
         <MdMenuOpen
           size={32}
